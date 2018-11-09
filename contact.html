@@ -1,23 +1,36 @@
- --- 
- layout: home 
- title: Ma page de contact 
- permalink: /contact 
- ---
+--- 
+layout: home 
+title: Ma page de contact
+permalink: /contact 
+---
 
-<center>
-    <p>
-        <img src="https://image.flaticon.com/icons/svg/131/131155.svg" alt="description" width="100" height="48" />
-    </p>
+<section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
+    <div class="clearfix gutter-spacious">
+        <div class="mb-3 mb-md-5 col-md-6 float-left">
+            <center>
+                <p>
+                    <img src="https://image.flaticon.com/icons/svg/131/131155.svg" alt="description" width="100" height="48" />
+                </p>
 
 
-    <h1>Ceci est ma page de contact, n'hésitez pas à me laisser un message !</h1>
+                <h1>Ceci est ma page de contact, n'hésitez pas à me laisser un message !</h1>
 
-    <form method="POST" action="https://formspree.io/nathanael.gbamy@hotmail.fr">
-        <input type="email" name="email" placeholder="Your email">
-        <br/>
-        <textarea name="message" placeholder="Test Message"></textarea>
-        <br/>
-        <button type="submit">Send Test</button>
-    </form>
+                <form method="POST" action="https://formspree.io/nathanael.gbamy@hotmail.fr">
+                    <input type="email" name="email" placeholder="Your email">
+                    <br/>
+                    <textarea name="message" placeholder="Test Message"></textarea>
+                    <br/>
+                    <button type="submit">Send Test</button>
+                </form>
+        </div>
+    </div>
+</section>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129007572-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-</center>
+    gtag('config', 'UA-129007572-1');
+</script>
